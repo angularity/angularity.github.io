@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/index.xml/</link>
+    <link>/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Angularity</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</link>
+      <link>/about/mission/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</guid>
+      <guid>/about/mission/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
@@ -31,10 +31,10 @@ tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
     
     <item>
       <title>Concept</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</link>
+      <link>/about/concept/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</guid>
+      <guid>/about/concept/</guid>
       <description>
 
 &lt;p&gt;Angularity is primarily a &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt; build tool.&lt;/p&gt;
@@ -134,10 +134,10 @@ the material you will find on this site is geared to Angular development.&lt;/p&
     
     <item>
       <title>Suitability</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</link>
+      <link>/about/suitability/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</guid>
+      <guid>/about/suitability/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;You should use Angularity when&amp;hellip;&lt;/h2&gt;
@@ -193,10 +193,10 @@ uses under the hood.&lt;/p&gt;
     
     <item>
       <title>Roadmap</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</link>
+      <link>/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</guid>
+      <guid>/about/roadmap/</guid>
       <description>
 
 &lt;h3 id=&#34;toc_0&#34;&gt;Version 0.1.0&lt;/h3&gt;
@@ -242,10 +242,10 @@ uses under the hood.&lt;/p&gt;
     
     <item>
       <title>Installation</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
+      <link>/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
+      <guid>/start/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Install git&lt;/h2&gt;
@@ -374,10 +374,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
+      <link>/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
+      <guid>/start/anatomy/</guid>
       <description>
 
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
@@ -463,10 +463,10 @@ the NodeJS platform.&lt;/p&gt;
     
     <item>
       <title>Todo Example</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <link>/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <guid>/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -623,10 +623,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Building Todo</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
+      <link>/start/building/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
+      <guid>/start/building/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
@@ -677,10 +677,10 @@ application.&lt;/p&gt;
     
     <item>
       <title>Using Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
+      <link>/start/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
+      <guid>/start/webstorm/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -753,10 +753,10 @@ release your application.&lt;/p&gt;
     
     <item>
       <title>Init</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
+      <link>/tasks/init/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
+      <guid>/tasks/init/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project. The given options initialise
   project defaults. Where omitted the global default will be in effect for the
   project.
@@ -810,10 +810,10 @@ Options:
     
     <item>
       <title>Build</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</link>
+      <link>/tasks/build/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
+      <guid>/tasks/build/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;build&amp;quot; task performs a single build of the javascript and SASS
   composition root(s).
 
@@ -833,10 +833,10 @@ Options:
     
     <item>
       <title>Watch</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</link>
+      <link>/tasks/watch/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</guid>
+      <guid>/tasks/watch/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;watch&amp;quot; task performs an initial build and then serves the application on
   localhost at the given port. It then watches the project and performs rebuild
   of Javascript and/or SASS compositions upon change. This is followed by HTML
@@ -861,10 +861,10 @@ Options:
     
     <item>
       <title>Test</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</link>
+      <link>/tasks/test/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</guid>
+      <guid>/tasks/test/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;test&amp;quot; task performs a one time build and karma test of all .spec.js
   files in the project.
 
@@ -886,10 +886,10 @@ Options:
     
     <item>
       <title>Release</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</link>
+      <link>/tasks/release/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
+      <guid>/tasks/release/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;release&amp;quot; task performs a single build and exports the build files along
   with bower components to a release directory.
 
@@ -910,10 +910,10 @@ Options:
     
     <item>
       <title>Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
+      <link>/tasks/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
+      <guid>/tasks/webstorm/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;webstorm&amp;quot; task initialises webstorm for a project in the current working
   directory and launches the IDE.
 

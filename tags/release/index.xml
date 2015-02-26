@@ -3,7 +3,7 @@
   <channel>
       <title>Release on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/release/index.xml/</link>
+    <link>/tags/release/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Release</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</link>
+      <link>/tasks/release/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
+      <guid>/tasks/release/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;release&amp;quot; task performs a single build and exports the build files along
   with bower components to a release directory.
 

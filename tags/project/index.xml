@@ -3,7 +3,7 @@
   <channel>
       <title>Project on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/project/index.xml/</link>
+    <link>/tags/project/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
+      <link>/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
+      <guid>/start/anatomy/</guid>
       <description>
 
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
@@ -100,10 +100,10 @@ the NodeJS platform.&lt;/p&gt;
     
     <item>
       <title>Todo Example</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <link>/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <guid>/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -260,10 +260,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Using Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
+      <link>/start/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
+      <guid>/start/webstorm/</guid>
       <description>
 
 &lt;blockquote&gt;

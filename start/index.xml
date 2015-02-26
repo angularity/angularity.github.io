@@ -3,7 +3,7 @@
   <channel>
       <title>Starts on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/index.xml/</link>
+    <link>/start/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Installation</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
+      <link>/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
+      <guid>/start/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Install git&lt;/h2&gt;
@@ -143,10 +143,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
+      <link>/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
+      <guid>/start/anatomy/</guid>
       <description>
 
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
@@ -232,10 +232,10 @@ the NodeJS platform.&lt;/p&gt;
     
     <item>
       <title>Todo Example</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <link>/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <guid>/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -392,10 +392,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Building Todo</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
+      <link>/start/building/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
+      <guid>/start/building/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
@@ -446,10 +446,10 @@ application.&lt;/p&gt;
     
     <item>
       <title>Using Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
+      <link>/start/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
+      <guid>/start/webstorm/</guid>
       <description>
 
 &lt;blockquote&gt;

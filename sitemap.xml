@@ -2,83 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</loc>
+    <loc>/about/mission/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</loc>
+    <loc>/about/concept/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</loc>
+    <loc>/about/suitability/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</loc>
+    <loc>/about/roadmap/</loc>
     <lastmod>2014-12-15T13:43:03+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</loc>
+    <loc>/start/installation/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</loc>
+    <loc>/start/anatomy/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</loc>
+    <loc>/start/example/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</loc>
+    <loc>/start/building/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</loc>
+    <loc>/start/webstorm/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</loc>
+    <loc>/tasks/init/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</loc>
+    <loc>/tasks/build/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</loc>
+    <loc>/tasks/watch/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</loc>
+    <loc>/tasks/test/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</loc>
+    <loc>/tasks/release/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</loc>
+    <loc>/tasks/webstorm/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   

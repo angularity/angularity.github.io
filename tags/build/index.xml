@@ -3,7 +3,7 @@
   <channel>
       <title>Build on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/build/index.xml/</link>
+    <link>/tags/build/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Build</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</link>
+      <link>/tasks/build/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
+      <guid>/tasks/build/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;build&amp;quot; task performs a single build of the javascript and SASS
   composition root(s).
 

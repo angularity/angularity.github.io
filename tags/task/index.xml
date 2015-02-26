@@ -3,7 +3,7 @@
   <channel>
       <title>Task on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/task/index.xml/</link>
+    <link>/tags/task/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Init</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
+      <link>/tasks/init/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
+      <guid>/tasks/init/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project. The given options initialise
   project defaults. Where omitted the global default will be in effect for the
   project.
@@ -68,10 +68,10 @@ Options:
     
     <item>
       <title>Build</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</link>
+      <link>/tasks/build/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
+      <guid>/tasks/build/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;build&amp;quot; task performs a single build of the javascript and SASS
   composition root(s).
 
@@ -91,10 +91,10 @@ Options:
     
     <item>
       <title>Watch</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</link>
+      <link>/tasks/watch/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</guid>
+      <guid>/tasks/watch/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;watch&amp;quot; task performs an initial build and then serves the application on
   localhost at the given port. It then watches the project and performs rebuild
   of Javascript and/or SASS compositions upon change. This is followed by HTML
@@ -119,10 +119,10 @@ Options:
     
     <item>
       <title>Test</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</link>
+      <link>/tasks/test/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</guid>
+      <guid>/tasks/test/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;test&amp;quot; task performs a one time build and karma test of all .spec.js
   files in the project.
 
@@ -144,10 +144,10 @@ Options:
     
     <item>
       <title>Release</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</link>
+      <link>/tasks/release/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
+      <guid>/tasks/release/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;release&amp;quot; task performs a single build and exports the build files along
   with bower components to a release directory.
 
@@ -168,10 +168,10 @@ Options:
     
     <item>
       <title>Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
+      <link>/tasks/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
+      <guid>/tasks/webstorm/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;webstorm&amp;quot; task initialises webstorm for a project in the current working
   directory and launches the IDE.
 
