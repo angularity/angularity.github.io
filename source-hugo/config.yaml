@@ -1,6 +1,6 @@
 title: Angularity
 version: 0.0.1
- # baseurl: http://angularity.github.io/
+ # baseurl: http://angularity.github.io
 canonifyurls: true
 publishdir: ../
 MetaDataFormat: yaml
@@ -21,8 +21,8 @@ params:
   GoogleAnalyticsId: UA-37884921-1
   GoogleAnalyticsDomain: bguiz.com
   RootRedirect:
-    Url: /about/main
-    Name: Introduction
+    Url: /about/mission
+    Name: Angularity
 
 indexes:
   category: categories
@@ -36,3 +36,6 @@ menu:
     - Name: Getting Started
       Weight: 2000
       Identifier: start
+    - Name: Task Reference
+      Weight: 3000
+      Identifier: tasks

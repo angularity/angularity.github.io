@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Test on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/test/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:43:30 AEDT</updated>
+    
+    <item>
+      <title>Test</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;test&amp;quot; task performs a one time build and karma test of all .spec.js
+  files in the project.
+
+Examples:
+  angularity test    Run this task
+
+
+Options:
+  --help, -h, -?       This help message
+  --reporter, -r       Specify a custom JsHint reporter to use. Either a
+                       locally npm installed module, or an asolute path to one.
+                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --karmareporter, -k  Specify a custom Karma reporter to use. Either a locally
+                       npm installed module, or an asolute path to one.
+                                          [default: &amp;quot;angularity-karma-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

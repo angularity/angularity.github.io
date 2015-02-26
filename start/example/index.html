@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
+
+    <title>Todo Example</title>
+
+    <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/style.css" rel="stylesheet">
+    <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/style-responsive.css" rel="stylesheet" />
+    <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/monokai_sublime.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/" class="logo"><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/logo.png" style="height:40px;"></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="angularity" data-repo="node-angularity" data-type="follow"></span>
+                    <span rel="show-github" data-user="angularity" data-repo="node-angularity"></span>
+                    <span rel="show-github" data-user="angularity" data-repo="node-angularity" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu"> Todo Example </h1>
+            </div>
+      </header>
+      
+
+      
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+        
+        <ul class="sidebar-menu">
+          
+          
+            
+              <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    
+                    <span>About</span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
+                </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/"> Angularity </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
+                    
+                </ul>
+            
+              </li>
+          
+            
+              <li class="sub-menu active">
+                <a href="javascript:;" class="">
+                    
+                    <span>Getting Started</span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
+                </a>
+                <ul class="sub open">
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/"> Installation </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
+                    
+                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/"> Todo Example </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/"> Building Todo </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
+                    
+                </ul>
+            
+              </li>
+          
+            
+              <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    
+                    <span>Task Reference</span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
+                </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/"> Init </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/"> Build </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/"> Watch </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/"> Test </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/"> Release </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/"> Webstorm </a> </li>
+                    
+                </ul>
+            
+              </li>
+          
+            <li>
+                <a href="https://github.com/angularity/node-angularity/issues" target="blank">
+                    <i class='fa fa-life-ring'></i> Issues
+                </a>
+            </li>
+            
+                <li>
+                    <a href="https://github.com/angularity/angularity.github.io//start/" target="blank">
+                        <i class='fa fa-edit'></i> Edit
+                    </a>
+                </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              <div class="row">
+                  <div class="row-nav-prev col-md-1">
+                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy">
+                      <i class="fa fa-angle-left"></i>
+                      </a>
+                  </div>
+                <div class="row-content col-md-10">
+                    <section class="panel">
+                    <div class="panel-body">
+
+
+
+<p>Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
+<a href="https://github.com/angularity/angularity-todo-es5">Todo Application</a>.</p>
+
+<p>You can go ahead and clone it using Git.</p>
+
+<blockquote>
+<p>By default <code>git clone</code> will create a subdirectory. If you have been working with the blank project from last page,
+make sure that you are back in the parent directory.</p>
+</blockquote>
+
+<pre><code>git clone https://github.com/angularity/angularity-todo-es5.git
+</code></pre>
+
+<p>This gives the following files (or similar)</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/todo-directory.png" alt="todo directory" />
+</p>
+
+<p>Including an npm <a href="https://docs.npmjs.com/files/package.json#bundleddependencies">bundled dependency</a> which we consider a
+ common library.</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/todo-bundled.png" alt="todo bundled" />
+</p>
+
+<p>You will notice that the folder structure is feature based. There is no restriction as to where images or javascript or
+html lives. You may use the scheme that best suits your needs.</p>
+
+<h2 id="toc_0">Dependencies</h2>
+
+<p>Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
+the project directory.</p>
+
+<pre><code>npm install
+
+bower install
+</code></pre>
+
+<h2 id="toc_1">Composition Root</h2>
+
+<p>The place to start is always the composition root, so take a look at <code>/app/index.js</code>.</p>
+
+<pre><code>var todoRoutes            = require('../todo/todo-routes'),
+    escapeKeyDirective    = require('examplelib/interaction/escape-key-directive'),
+    focusElementDirective = require('examplelib/interaction/focus-element-directive'),
+    LocalStorage          = require('../storage/local-storage');
+
+angular.module('app', [ 'ui.router', 'ui.bootstrap' ])
+  .config(todoRoutes)
+  .directive('escape', escapeKeyDirective.forAttribute('escape'))
+  .directive('focus', focusElementDirective.forAttribute('focus'))
+  .value('storage', new LocalStorage('todos-angularjs'));
+</code></pre>
+
+<p>There is a second compostion root, <code>app/no-storage/index.js</code> that has a mock storage component. We will not discuss this
+except to point out that you may make as many additional applications as you need for development purposes.</p>
+
+<h3 id="toc_2">Module definition</h3>
+
+<p>An angularity project is not split between angular modules. Unless we intend this project to be a module for
+distribution the module name does not matter.</p>
+
+<p>We can see here that module definition lists a few dependencies:</p>
+
+<ul>
+<li><a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router">UI router</a> because its a better router.</li>
+<li><a href="http://angular-ui.github.io/bootstrap/">UI bootstrap</a> for bootstrap components.</li>
+</ul>
+
+<p>These are satisfied by bower. If you look at the <code>bower.json</code> you will see them listed. The first place to start for any
+new project is usually to sort out this list of dependencies. Each bower dependency is automatically injected into the
+ <code>index.html</code> during the build process.</p>
+
+<h3 id="toc_3">Routes</h3>
+
+<p>The routes are a key part of composition, for this project they happen to be found in <code>/todo/todo-routes.js</code>.</p>
+
+<pre><code>/**
+ * &lt;p&gt;Routing for the to-do app.&lt;/p&gt;
+ * @ngInject
+ * @param {object} $StateProvider
+ * @param {object} $urlRouterProvider
+ */
+function todoRoutes($stateProvider, $urlRouterProvider) {
+  'use strict';
+  $urlRouterProvider.otherwise('/')
+  $stateProvider
+    .state('home', {
+      url:        '/:status',
+      template:   require('./view/todo.html'),
+      controller: require('./controller/todo-controller')
+    });
+}
+module.exports = todoRoutes;
+</code></pre>
+
+<p>This is a pretty simple example of <a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router">UI-router</a>, with some
+important distinctions.</p>
+
+<ul>
+<li><p>As with every file we will import into the composition root, we must use the explicit annotation <code>@ngInject</code>. This
+is super important to ensure proper minification.</p></li>
+
+<li><p>We can directly <code>require()</code> the template and controller items. We do not need to hack the template cache or map the
+controller separately.</p></li>
+</ul>
+
+<p>Routes are also composition so there is no reason why this cannot be defined in-line in the composition root. Similarly,
+you can split your composition root over several files as appropriate.</p>
+
+<h3 id="toc_4">Directives</h3>
+
+<p>Note that there are no directives in the local library, they are
+<a href="https://docs.npmjs.com/files/package.json#bundleddependencies">bundled dependencies</a> in order to illustrate how a
+library package may be used.</p>
+
+<p>The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.</p>
+
+<p>Each of the directives shown, <code>escapeKeyDirective</code> and <code>focusElementDirective</code> are invoked by attribute and need to read
+a value from that attribute. However, in the configuration root we can map them against any attribute and need to tell
+them what attribute that is.</p>
+
+<p>The <code>forAttribute()</code> method is a factory for creating the directive. That way we can close it as
+ <code>focusElementDirective.forAttribute('focus')</code> and yield a function for mapping.</p>
+
+<p>Lets take a closer look at that code.</p>
+
+<pre><code>focusElementDirective.forAttribute = function forAttribute(attribute) {
+  return /** @ngInject */ function ($timeout) {
+    return focusElementDirective($timeout, attribute);
+  };
+}
+</code></pre>
+
+<p>All that is happening is that we capture the given <code>attribute</code> name and pass it to the directive along with the injected
+<code>$timeout</code> dependency.</p>
+
+<p>Note the use of <code>@ngInject</code> comment inline, since it is the inner function that is provided to the Angular directive
+map.</p>
+
+<p>These implementations are maximally correct. In a practical situation you may prefer to avoid the <code>forAttribute()</code>
+factory and just hard-code the directive to a particular element. In this case you must ensure you map the directive
+against the same name in the composition root.</p>
+
+<h3 id="toc_5">Factories and Services</h3>
+
+<p>This example does not have and factories or services, but instead maps a <code>value()</code>. This is because the <code>LocalStorage</code>
+component does not require any dependency injection and does require implementation. As such it perhaps a bad example.</p>
+
+<p>Be that as it may, factories and services may be mapped just as easily by specifying an import.</p>
+
+                    </div> 
+                    </section> 
+                </div> 
+                <div class="row-nav-next col-md-1">
+                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building">
+                    <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+    <script src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/jquery-2.1.1.min.js"></script>
+    <script src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/jquery.scrollTo.min.js"></script>
+    <script src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/bootstrap.min.js"></script>
+    <script src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/scripts.js"></script>
+    <script async defer id="github-bjs" src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/js/buttons.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37884921-1', 'bguiz.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

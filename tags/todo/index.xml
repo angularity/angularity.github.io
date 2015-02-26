@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Todo on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/todo/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:43:41 AEDT</updated>
+    
+    <item>
+      <title>Todo Example</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <description>
+
+&lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
+&lt;a href=&#34;https://github.com/angularity/angularity-todo-es5&#34;&gt;Todo Application&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can go ahead and clone it using Git.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;By default &lt;code&gt;git clone&lt;/code&gt; will create a subdirectory. If you have been working with the blank project from last page,
+make sure that you are back in the parent directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/angularity/angularity-todo-es5.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This gives the following files (or similar)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/todo-directory.png&#34; alt=&#34;todo directory&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Including an npm &lt;a href=&#34;https://docs.npmjs.com/files/package.json#bundleddependencies&#34;&gt;bundled dependency&lt;/a&gt; which we consider a
+ common library.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/todo-bundled.png&#34; alt=&#34;todo bundled&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You will notice that the folder structure is feature based. There is no restriction as to where images or javascript or
+html lives. You may use the scheme that best suits your needs.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;p&gt;Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
+the project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install
+
+bower install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Composition Root&lt;/h2&gt;
+
+&lt;p&gt;The place to start is always the composition root, so take a look at &lt;code&gt;/app/index.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var todoRoutes            = require(&#39;../todo/todo-routes&#39;),
+    escapeKeyDirective    = require(&#39;examplelib/interaction/escape-key-directive&#39;),
+    focusElementDirective = require(&#39;examplelib/interaction/focus-element-directive&#39;),
+    LocalStorage          = require(&#39;../storage/local-storage&#39;);
+
+angular.module(&#39;app&#39;, [ &#39;ui.router&#39;, &#39;ui.bootstrap&#39; ])
+  .config(todoRoutes)
+  .directive(&#39;escape&#39;, escapeKeyDirective.forAttribute(&#39;escape&#39;))
+  .directive(&#39;focus&#39;, focusElementDirective.forAttribute(&#39;focus&#39;))
+  .value(&#39;storage&#39;, new LocalStorage(&#39;todos-angularjs&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is a second compostion root, &lt;code&gt;app/no-storage/index.js&lt;/code&gt; that has a mock storage component. We will not discuss this
+except to point out that you may make as many additional applications as you need for development purposes.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Module definition&lt;/h3&gt;
+
+&lt;p&gt;An angularity project is not split between angular modules. Unless we intend this project to be a module for
+distribution the module name does not matter.&lt;/p&gt;
+
+&lt;p&gt;We can see here that module definition lists a few dependencies:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/ui-router/site/#/api/ui.router&#34;&gt;UI router&lt;/a&gt; because its a better router.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/bootstrap/&#34;&gt;UI bootstrap&lt;/a&gt; for bootstrap components.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are satisfied by bower. If you look at the &lt;code&gt;bower.json&lt;/code&gt; you will see them listed. The first place to start for any
+new project is usually to sort out this list of dependencies. Each bower dependency is automatically injected into the
+ &lt;code&gt;index.html&lt;/code&gt; during the build process.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Routes&lt;/h3&gt;
+
+&lt;p&gt;The routes are a key part of composition, for this project they happen to be found in &lt;code&gt;/todo/todo-routes.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * &amp;lt;p&amp;gt;Routing for the to-do app.&amp;lt;/p&amp;gt;
+ * @ngInject
+ * @param {object} $StateProvider
+ * @param {object} $urlRouterProvider
+ */
+function todoRoutes($stateProvider, $urlRouterProvider) {
+  &#39;use strict&#39;;
+  $urlRouterProvider.otherwise(&#39;/&#39;)
+  $stateProvider
+    .state(&#39;home&#39;, {
+      url:        &#39;/:status&#39;,
+      template:   require(&#39;./view/todo.html&#39;),
+      controller: require(&#39;./controller/todo-controller&#39;)
+    });
+}
+module.exports = todoRoutes;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a pretty simple example of &lt;a href=&#34;http://angular-ui.github.io/ui-router/site/#/api/ui.router&#34;&gt;UI-router&lt;/a&gt;, with some
+important distinctions.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;As with every file we will import into the composition root, we must use the explicit annotation &lt;code&gt;@ngInject&lt;/code&gt;. This
+is super important to ensure proper minification.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We can directly &lt;code&gt;require()&lt;/code&gt; the template and controller items. We do not need to hack the template cache or map the
+controller separately.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Routes are also composition so there is no reason why this cannot be defined in-line in the composition root. Similarly,
+you can split your composition root over several files as appropriate.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;p&gt;Note that there are no directives in the local library, they are
+&lt;a href=&#34;https://docs.npmjs.com/files/package.json#bundleddependencies&#34;&gt;bundled dependencies&lt;/a&gt; in order to illustrate how a
+library package may be used.&lt;/p&gt;
+
+&lt;p&gt;The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.&lt;/p&gt;
+
+&lt;p&gt;Each of the directives shown, &lt;code&gt;escapeKeyDirective&lt;/code&gt; and &lt;code&gt;focusElementDirective&lt;/code&gt; are invoked by attribute and need to read
+a value from that attribute. However, in the configuration root we can map them against any attribute and need to tell
+them what attribute that is.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;forAttribute()&lt;/code&gt; method is a factory for creating the directive. That way we can close it as
+ &lt;code&gt;focusElementDirective.forAttribute(&#39;focus&#39;)&lt;/code&gt; and yield a function for mapping.&lt;/p&gt;
+
+&lt;p&gt;Lets take a closer look at that code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;focusElementDirective.forAttribute = function forAttribute(attribute) {
+  return /** @ngInject */ function ($timeout) {
+    return focusElementDirective($timeout, attribute);
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All that is happening is that we capture the given &lt;code&gt;attribute&lt;/code&gt; name and pass it to the directive along with the injected
+&lt;code&gt;$timeout&lt;/code&gt; dependency.&lt;/p&gt;
+
+&lt;p&gt;Note the use of &lt;code&gt;@ngInject&lt;/code&gt; comment inline, since it is the inner function that is provided to the Angular directive
+map.&lt;/p&gt;
+
+&lt;p&gt;These implementations are maximally correct. In a practical situation you may prefer to avoid the &lt;code&gt;forAttribute()&lt;/code&gt;
+factory and just hard-code the directive to a particular element. In this case you must ensure you map the directive
+against the same name in the composition root.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Factories and Services&lt;/h3&gt;
+
+&lt;p&gt;This example does not have and factories or services, but instead maps a &lt;code&gt;value()&lt;/code&gt;. This is because the &lt;code&gt;LocalStorage&lt;/code&gt;
+component does not require any dependency injection and does require implementation. As such it perhaps a bad example.&lt;/p&gt;
+
+&lt;p&gt;Be that as it may, factories and services may be mapped just as easily by specifying an import.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building Todo</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
+
+&lt;p&gt;It is good to test &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; applications. The Todo application implements only a couple of
+tests but they are always nice to see running.&lt;/p&gt;
+
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;test&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate an &lt;code&gt;/app-test&lt;/code&gt; directory and you should see a console output indicating all tests passing.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Build&lt;/h2&gt;
+
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/build&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity build
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will perform a one-time build in an &lt;code&gt;/app-build&lt;/code&gt; directory. For development however, you will find more use in the
+&lt;a href=&#34;/tasks/watch&#34;&gt;&lt;code&gt;watch&lt;/code&gt;&lt;/a&gt; task.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Watch&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/watch&#34;&gt;&lt;code&gt;watch&lt;/code&gt;&lt;/a&gt; task is best for normal development.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity watch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is similar to the &lt;a href=&#34;/tasks/build&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/a&gt; task. However it also watches your project for changes and serves the
+project on a &lt;code&gt;localhost&lt;/code&gt; port. For the Todo application this is port &lt;code&gt;55555&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Navigate your browser to &lt;a href=&#34;http://localhost:55555&#34;&gt;&lt;code&gt;http://localhost:55555&lt;/code&gt;&lt;/a&gt; and you will see a rudimentary Todo
+application.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Release&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/release&#34;&gt;&lt;code&gt;release&lt;/code&gt;&lt;/a&gt; task creates a set of deployment of files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity release
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate an &lt;code&gt;/app-release&lt;/code&gt; directory with a maximally flat set of files for deployment.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
