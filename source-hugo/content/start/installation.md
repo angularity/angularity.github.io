@@ -30,20 +30,23 @@ For **windows platform**:
   * Choose to **checkout Windows-style, commit Unit-style** for line endings.<br/>
   ![Windows git installation step #2](/start/installation-git-2.png)
 
-## Install node.js
+## Install node.js (v0.10.36)
 
-[`http://nodejs.org/download/`](http://nodejs.org/download/)
+Angularity is tested against Node.js version `0.10.36` on windows and linux and `0.12.1` on mac.
 
-Once again nsure that you choose the correct binary for your system.
+At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
+will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
+a Node Version Manager; [`nvm` for mac](https://github.com/creationix/nvm) or
+[`nvm-windows` for Windows](https://github.com/coreybutler/nvm-windows).
 
-![Install node](/start/installation-node.png)
+Otherwise you can just install directly but ensure that you choose the correct binary for your system.
+
+[`http://nodejs.org/dist/v0.10.36`](http://nodejs.org/dist/v0.10.36)
 
 Choose the **default settings** whenever prompted.
 
 On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely
-need to reboot. Once you can see the path to node in the console then you are ready.
-
-    echo %PATH%
+need to reboot. With `nvm-windows` you may have some other issues getting started but it is worth persevering.
 
 ## Update npm
 
