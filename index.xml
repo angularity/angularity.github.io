@@ -267,22 +267,23 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 &lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Install node.js&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Install node.js (v0.10.36)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://nodejs.org/download/&#34;&gt;&lt;code&gt;http://nodejs.org/download/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Angularity is tested against Node.js version &lt;code&gt;0.10.36&lt;/code&gt; on windows and linux and &lt;code&gt;0.12.1&lt;/code&gt; on mac.&lt;/p&gt;
 
-&lt;p&gt;Once again nsure that you choose the correct binary for your system.&lt;/p&gt;
+&lt;p&gt;At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
+will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
+a Node Version Manager; &lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;&lt;code&gt;nvm&lt;/code&gt; for mac&lt;/a&gt; or
+&lt;a href=&#34;https://github.com/coreybutler/nvm-windows&#34;&gt;&lt;code&gt;nvm-windows&lt;/code&gt; for Windows&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;Install node&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;Otherwise you can just install directly but ensure that you choose the correct binary for your system.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodejs.org/dist/v0.10.36&#34;&gt;&lt;code&gt;http://nodejs.org/dist/v0.10.36&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Choose the &lt;strong&gt;default settings&lt;/strong&gt; whenever prompted.&lt;/p&gt;
 
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
-need to reboot. Once you can see the path to node in the console then you are ready.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;echo %PATH%
-&lt;/code&gt;&lt;/pre&gt;
+need to reboot. With &lt;code&gt;nvm-windows&lt;/code&gt; you may have some other issues getting started but it is worth persevering.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
 

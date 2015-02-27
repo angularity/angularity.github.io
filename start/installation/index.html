@@ -179,22 +179,23 @@ Meaning that 64 bit systems should choose the 64 bit binary.</p>
 </p></li>
 </ul>
 
-<h2 id="toc_1">Install node.js</h2>
+<h2 id="toc_1">Install node.js (v0.10.36)</h2>
 
-<p><a href="http://nodejs.org/download/"><code>http://nodejs.org/download/</code></a></p>
+<p>Angularity is tested against Node.js version <code>0.10.36</code> on windows and linux and <code>0.12.1</code> on mac.</p>
 
-<p>Once again nsure that you choose the correct binary for your system.</p>
+<p>At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
+will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
+a Node Version Manager; <a href="https://github.com/creationix/nvm"><code>nvm</code> for mac</a> or
+<a href="https://github.com/coreybutler/nvm-windows"><code>nvm-windows</code> for Windows</a>.</p>
 
-<p><img src="/start/installation-node.png" alt="Install node" />
-</p>
+<p>Otherwise you can just install directly but ensure that you choose the correct binary for your system.</p>
+
+<p><a href="http://nodejs.org/dist/v0.10.36"><code>http://nodejs.org/dist/v0.10.36</code></a></p>
 
 <p>Choose the <strong>default settings</strong> whenever prompted.</p>
 
 <p>On <strong>Windows</strong> platform the installer will add a <strong>path</strong> entry to node. For that to be active you will most likely
-need to reboot. Once you can see the path to node in the console then you are ready.</p>
-
-<pre><code>echo %PATH%
-</code></pre>
+need to reboot. With <code>nvm-windows</code> you may have some other issues getting started but it is worth persevering.</p>
 
 <h2 id="toc_2">Update npm</h2>
 
