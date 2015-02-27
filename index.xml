@@ -776,6 +776,7 @@ release your application.&lt;/p&gt;
   * karma.conf.js     exists, else create    --karma
   * .jshintrc         exists, else create    --jshint
   * .gitignore        exists, else create    --gitignore
+  * .editorconfig     exists, else create    --editorconfig
 
   If a package.json is present initialisation will occur in the current
   directory. Otherwise a sub-directory iscreated per the project name
@@ -805,6 +806,7 @@ Options:
   --karma            Create karma.conf.js                        [default: true]
   --jshint           Create .jshintrc                            [default: true]
   --gitignore        Create .gitignore                           [default: true]
+  --editorconfig     Create .editorconfig                        [default: true]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -824,10 +826,11 @@ Examples:
 
 
 Options:
-  --help, -h, -?       This help message
-  --unminified, -u     Inhibit minification of javascript                       [default: false]
-  --reporter, -r       Specify a custom JsHint reporter to use. Either a
-                       locally npm installed module, or an asolute path to one. [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --help, -h, -?         This help message
+  --unminified, -u       Inhibit minification of javascript     [default: false]
+  --jshint-reporter, -j  Specify a custom JsHint reporter to use. Either a
+                         locally npm installed module, or the absolute path to
+                         one.            [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -850,12 +853,15 @@ Examples:
 
 
 Options:
-  --help, -h, -?    This help message
-  --unminified, -u  Inhibit minification of javascript          [default: false]
-  --port, -p        A port for the development web server       [default: 55555]
-  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
-                    npm installed module, or an asolute path to one.
-                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --help, -h, -?         This help message
+  --unminified, -u       Inhibit minification of javascript     [default: false]
+  --port, -p             A port for the development web server  [default: 55555]
+  --jshint-reporter, -j  Specify a custom JsHint reporter to use. Either a
+                         locally npm installed module, or the absolute path to
+                         one.            [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --karma-reporter, -k   Specify a custom Karma reporter to use. Either a
+                         locally npm installed module, or an asolute path to
+                         one.             [default: &amp;quot;karma-angularity-reporter&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -874,13 +880,13 @@ Examples:
 
 
 Options:
-  --help, -h, -?       This help message
-  --reporter, -r       Specify a custom JsHint reporter to use. Either a
-                       locally npm installed module, or an asolute path to one.
-                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
-  --karmareporter, -k  Specify a custom Karma reporter to use. Either a locally
-                       npm installed module, or an asolute path to one.
-                                          [default: &amp;quot;angularity-karma-reporter&amp;quot;]
+  --help, -h, -?         This help message
+  --jshint-reporter, -j  Specify a custom JsHint reporter to use. Either a
+                         locally npm installed module, or the absolute path to
+                         one.            [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --karma-reporter, -k   Specify a custom Karma reporter to use. Either a
+                         locally npm installed module, or an asolute path to
+                         one.             [default: &amp;quot;karma-angularity-reporter&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -900,11 +906,11 @@ Examples:
 
 
 Options:
-  --help, -h, -?    This help message
-  --unminified, -u  Inhibit minification of javascript          [default: false]
-  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
-                    npm installed module, or an asolute path to one.
-                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --help, -h, -?         This help message
+  --unminified, -u       Inhibit minification of javascript     [default: false]
+  --jshint-reporter, -j  Specify a custom JsHint reporter to use. Either a
+                         locally npm installed module, or the absolute path to
+                         one.            [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
