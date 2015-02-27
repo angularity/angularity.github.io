@@ -33,6 +33,7 @@ weight: 3010
   * karma.conf.js     exists, else create    --karma
   * .jshintrc         exists, else create    --jshint
   * .gitignore        exists, else create    --gitignore
+  * .editorconfig     exists, else create    --editorconfig
 
   If a package.json is present initialisation will occur in the current
   directory. Otherwise a sub-directory iscreated per the project name
@@ -62,4 +63,5 @@ Options:
   --karma            Create karma.conf.js                        [default: true]
   --jshint           Create .jshintrc                            [default: true]
   --gitignore        Create .gitignore                           [default: true]
+  --editorconfig     Create .editorconfig                        [default: true]
 ```

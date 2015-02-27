@@ -24,9 +24,9 @@ Examples:
 
 
 Options:
-  --help, -h, -?    This help message
-  --unminified, -u  Inhibit minification of javascript          [default: false]
-  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
-                    npm installed module, or an asolute path to one.
-                                         [default: "angularity-jshint-reporter"]
+  --help, -h, -?         This help message
+  --unminified, -u       Inhibit minification of javascript     [default: false]
+  --jshint-reporter, -j  Specify a custom JsHint reporter to use. Either a
+                         locally npm installed module, or the absolute path to
+                         one.            [default: "angularity-jshint-reporter"]
 ```
