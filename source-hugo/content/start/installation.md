@@ -32,14 +32,27 @@ For **windows platform**:
 
 ## Install node.js (v0.10.36)
 
-Angularity is tested against Node.js version `0.10.36` on windows and linux and `0.12.1` on mac.
+Angularity is tested against Node.js version `0.10.36`.
 
-At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
-will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
-a Node Version Manager; [`nvm` for mac](https://github.com/creationix/nvm) or
+### Using a Package Manager
+
+At this time you cannot install the latest Node.js distribution and expect Angularity to work. In general you will find
+that you will need to switch versions of Node.js for different applications.
+
+We strongly recommend you install a Node Version Manager; [`nvm` for mac](https://github.com/creationix/nvm) or
 [`nvm-windows` for Windows](https://github.com/coreybutler/nvm-windows).
 
-Otherwise you can just install directly but ensure that you choose the correct binary for your system.
+Once we have `nvm` we can then install `0.10.36`.
+
+```
+nvm install 0.10.36
+nvm alias default 0.10.36
+```
+
+### *or* Directly
+
+If you prefer to not use NVM or some other package manager you can just install directly but ensure that you choose the
+correct binary for your system.
 
 [`http://nodejs.org/dist/v0.10.36`](http://nodejs.org/dist/v0.10.36)
 

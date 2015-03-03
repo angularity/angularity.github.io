@@ -269,14 +269,26 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Install node.js (v0.10.36)&lt;/h2&gt;
 
-&lt;p&gt;Angularity is tested against Node.js version &lt;code&gt;0.10.36&lt;/code&gt; on windows and linux and &lt;code&gt;0.12.1&lt;/code&gt; on mac.&lt;/p&gt;
+&lt;p&gt;Angularity is tested against Node.js version &lt;code&gt;0.10.36&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
-will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
-a Node Version Manager; &lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;&lt;code&gt;nvm&lt;/code&gt; for mac&lt;/a&gt; or
+&lt;h3 id=&#34;toc_2&#34;&gt;Using a Package Manager&lt;/h3&gt;
+
+&lt;p&gt;At this time you cannot install the latest Node.js distribution and expect Angularity to work. In general you will find
+that you will need to switch versions of Node.js for different applications.&lt;/p&gt;
+
+&lt;p&gt;We strongly recommend you install a Node Version Manager; &lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;&lt;code&gt;nvm&lt;/code&gt; for mac&lt;/a&gt; or
 &lt;a href=&#34;https://github.com/coreybutler/nvm-windows&#34;&gt;&lt;code&gt;nvm-windows&lt;/code&gt; for Windows&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Otherwise you can just install directly but ensure that you choose the correct binary for your system.&lt;/p&gt;
+&lt;p&gt;Once we have &lt;code&gt;nvm&lt;/code&gt; we can then install &lt;code&gt;0.10.36&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvm install 0.10.36
+nvm alias default 0.10.36
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;&lt;em&gt;or&lt;/em&gt; Directly&lt;/h3&gt;
+
+&lt;p&gt;If you prefer to not use NVM or some other package manager you can just install directly but ensure that you choose the
+correct binary for your system.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://nodejs.org/dist/v0.10.36&#34;&gt;&lt;code&gt;http://nodejs.org/dist/v0.10.36&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -285,7 +297,7 @@ a Node Version Manager; &lt;a href=&#34;https://github.com/creationix/nvm&#34;&g
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
 need to reboot. With &lt;code&gt;nvm-windows&lt;/code&gt; you may have some other issues getting started but it is worth persevering.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Update npm&lt;/h2&gt;
 
 &lt;p&gt;Even if you just installed NodeJS you may be running npm older than
 &lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;npm &lt;code&gt;2.0.0&lt;/code&gt;&lt;/a&gt;. Check your version.&lt;/p&gt;
@@ -310,7 +322,7 @@ need to reboot. With &lt;code&gt;nvm-windows&lt;/code&gt; you may have some othe
 these &lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt;. We recommend deleting the
 npm instance in &lt;code&gt;program files&lt;/code&gt; and keeping the one in your &lt;code&gt;users&lt;/code&gt; directory.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Install Bower&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;Install Bower&lt;/h2&gt;
 
 &lt;p&gt;Most angularity projects will utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.&lt;/p&gt;
 
@@ -319,9 +331,9 @@ npm instance in &lt;code&gt;program files&lt;/code&gt; and keeping the one in yo
 &lt;pre&gt;&lt;code&gt;npm install -g bower
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Install Angularity&lt;/h2&gt;
+&lt;h2 id=&#34;toc_6&#34;&gt;Install Angularity&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Latest Release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Latest Release&lt;/h3&gt;
 
 &lt;p&gt;Use the latest release unless if you are new to Angularity or just want the most stable version.&lt;/p&gt;
 
@@ -330,28 +342,28 @@ npm instance in &lt;code&gt;program files&lt;/code&gt; and keeping the one in yo
 &lt;pre&gt;&lt;code&gt;npm install -g angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;&lt;em&gt;or&lt;/em&gt; Pre-Release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;&lt;em&gt;or&lt;/em&gt; Pre-Release&lt;/h3&gt;
 
 &lt;p&gt;You can install from &lt;a href=&#34;https://github.com/angularity/node-angularity&#34;&gt;Github&lt;/a&gt;. However this is considered bleeding edge.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;&lt;em&gt;or&lt;/em&gt; Tagged Release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;&lt;em&gt;or&lt;/em&gt; Tagged Release&lt;/h3&gt;
 
 &lt;p&gt;You can also install from a &lt;a href=&#34;https://github.com/angularity/node-angularity&#34;&gt;Github&lt;/a&gt; tag.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity#&amp;lt;TAG&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_8&#34;&gt;Check installation&lt;/h2&gt;
+&lt;h2 id=&#34;toc_10&#34;&gt;Check installation&lt;/h2&gt;
 
 &lt;p&gt;Run the angularity version command to make sure the installation worked.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;angularity -v
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_9&#34;&gt;Install source code&lt;/h2&gt;
+&lt;h2 id=&#34;toc_11&#34;&gt;Install source code&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;OPTIONAL&lt;/strong&gt;&lt;/p&gt;
 

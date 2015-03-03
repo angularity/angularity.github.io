@@ -181,14 +181,26 @@ Meaning that 64 bit systems should choose the 64 bit binary.</p>
 
 <h2 id="toc_1">Install node.js (v0.10.36)</h2>
 
-<p>Angularity is tested against Node.js version <code>0.10.36</code> on windows and linux and <code>0.12.1</code> on mac.</p>
+<p>Angularity is tested against Node.js version <code>0.10.36</code>.</p>
 
-<p>At this time you cannot install the latest Node.js Windows distribution and expect Angularity to work. In general you
-will find that you will need to switch versions of Node.js for different applications. We strongly recommend you install
-a Node Version Manager; <a href="https://github.com/creationix/nvm"><code>nvm</code> for mac</a> or
+<h3 id="toc_2">Using a Package Manager</h3>
+
+<p>At this time you cannot install the latest Node.js distribution and expect Angularity to work. In general you will find
+that you will need to switch versions of Node.js for different applications.</p>
+
+<p>We strongly recommend you install a Node Version Manager; <a href="https://github.com/creationix/nvm"><code>nvm</code> for mac</a> or
 <a href="https://github.com/coreybutler/nvm-windows"><code>nvm-windows</code> for Windows</a>.</p>
 
-<p>Otherwise you can just install directly but ensure that you choose the correct binary for your system.</p>
+<p>Once we have <code>nvm</code> we can then install <code>0.10.36</code>.</p>
+
+<pre><code>nvm install 0.10.36
+nvm alias default 0.10.36
+</code></pre>
+
+<h3 id="toc_3"><em>or</em> Directly</h3>
+
+<p>If you prefer to not use NVM or some other package manager you can just install directly but ensure that you choose the
+correct binary for your system.</p>
 
 <p><a href="http://nodejs.org/dist/v0.10.36"><code>http://nodejs.org/dist/v0.10.36</code></a></p>
 
@@ -197,7 +209,7 @@ a Node Version Manager; <a href="https://github.com/creationix/nvm"><code>nvm</c
 <p>On <strong>Windows</strong> platform the installer will add a <strong>path</strong> entry to node. For that to be active you will most likely
 need to reboot. With <code>nvm-windows</code> you may have some other issues getting started but it is worth persevering.</p>
 
-<h2 id="toc_2">Update npm</h2>
+<h2 id="toc_4">Update npm</h2>
 
 <p>Even if you just installed NodeJS you may be running npm older than
 <a href="http://blog.npmjs.org/post/98131109725/npm-2-0-0">npm <code>2.0.0</code></a>. Check your version.</p>
@@ -222,7 +234,7 @@ need to reboot. With <code>nvm-windows</code> you may have some other issues get
 these <a href="https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows">instructions</a>. We recommend deleting the
 npm instance in <code>program files</code> and keeping the one in your <code>users</code> directory.</p>
 
-<h2 id="toc_3">Install Bower</h2>
+<h2 id="toc_5">Install Bower</h2>
 
 <p>Most angularity projects will utilise <a href="http://bower.io/">bower</a>.</p>
 
@@ -231,9 +243,9 @@ npm instance in <code>program files</code> and keeping the one in your <code>use
 <pre><code>npm install -g bower
 </code></pre>
 
-<h2 id="toc_4">Install Angularity</h2>
+<h2 id="toc_6">Install Angularity</h2>
 
-<h3 id="toc_5">Latest Release</h3>
+<h3 id="toc_7">Latest Release</h3>
 
 <p>Use the latest release unless if you are new to Angularity or just want the most stable version.</p>
 
@@ -242,28 +254,28 @@ npm instance in <code>program files</code> and keeping the one in your <code>use
 <pre><code>npm install -g angularity
 </code></pre>
 
-<h3 id="toc_6"><em>or</em> Pre-Release</h3>
+<h3 id="toc_8"><em>or</em> Pre-Release</h3>
 
 <p>You can install from <a href="https://github.com/angularity/node-angularity">Github</a>. However this is considered bleeding edge.</p>
 
 <pre><code>npm install -g angularity/node-angularity
 </code></pre>
 
-<h3 id="toc_7"><em>or</em> Tagged Release</h3>
+<h3 id="toc_9"><em>or</em> Tagged Release</h3>
 
 <p>You can also install from a <a href="https://github.com/angularity/node-angularity">Github</a> tag.</p>
 
 <pre><code>npm install -g angularity/node-angularity#&lt;TAG&gt;
 </code></pre>
 
-<h2 id="toc_8">Check installation</h2>
+<h2 id="toc_10">Check installation</h2>
 
 <p>Run the angularity version command to make sure the installation worked.</p>
 
 <pre><code>angularity -v
 </code></pre>
 
-<h2 id="toc_9">Install source code</h2>
+<h2 id="toc_11">Install source code</h2>
 
 <p><strong>OPTIONAL</strong></p>
 
