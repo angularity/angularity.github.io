@@ -194,7 +194,18 @@ that you will need to switch versions of Node.js for different applications.</p>
 <p>Once we have <code>nvm</code> we can then install <code>0.10.36</code>.</p>
 
 <pre><code>nvm install 0.10.36
-nvm alias default 0.10.36
+nvm use 0.10.36
+</code></pre>
+
+<p>If you are using <a href="https://github.com/creationix/nvm"><code>nvm</code> for mac</a> then you will <strong>also</strong> need to alias your default
+version so that it will run in every shell.</p>
+
+<pre><code>nvm alias default 0.10.36
+</code></pre>
+
+<p>Finally, obtain a new shell and make sure that the expected version of node (0.10.36) is running.</p>
+
+<pre><code>node -v
 </code></pre>
 
 <h3 id="toc_3"><em>or</em> Directly</h3>

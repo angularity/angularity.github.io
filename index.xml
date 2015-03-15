@@ -282,7 +282,18 @@ that you will need to switch versions of Node.js for different applications.&lt;
 &lt;p&gt;Once we have &lt;code&gt;nvm&lt;/code&gt; we can then install &lt;code&gt;0.10.36&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;nvm install 0.10.36
-nvm alias default 0.10.36
+nvm use 0.10.36
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are using &lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;&lt;code&gt;nvm&lt;/code&gt; for mac&lt;/a&gt; then you will &lt;strong&gt;also&lt;/strong&gt; need to alias your default
+version so that it will run in every shell.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvm alias default 0.10.36
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, obtain a new shell and make sure that the expected version of node (0.10.36) is running.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;node -v
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;toc_3&#34;&gt;&lt;em&gt;or&lt;/em&gt; Directly&lt;/h3&gt;
@@ -705,7 +716,7 @@ similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you ma
 
 &lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;webstorm
+&lt;pre&gt;&lt;code&gt;angularity webstorm
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This will initialise a Webstorm project and other non-project features. It will attempt to launch Webstorm with the new

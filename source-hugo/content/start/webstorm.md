@@ -22,7 +22,7 @@ Ensure that the [Webstorm IDE](https://www.jetbrains.com/webstorm/) is **not run
 
 Run the [`webstorm`](/tasks/test) task from the Todo project directory.
 
-    webstorm
+    angularity webstorm
 
 This will initialise a Webstorm project and other non-project features. It will attempt to launch Webstorm with the new
 project.

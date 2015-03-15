@@ -46,7 +46,20 @@ Once we have `nvm` we can then install `0.10.36`.
 
 ```
 nvm install 0.10.36
+nvm use 0.10.36
+```
+
+If you are using [`nvm` for mac](https://github.com/creationix/nvm) then you will **also** need to alias your default
+version so that it will run in every shell.
+
+```
 nvm alias default 0.10.36
+```
+
+Finally, obtain a new shell and make sure that the expected version of node (0.10.36) is running.
+
+```
+node -v
 ```
 
 ### *or* Directly
