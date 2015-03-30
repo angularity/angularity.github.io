@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white; }
+
+.frontpage-container {
+  max-width: 44em;
+  margin: 0 auto; }
+
+.fontpage-logo {
+  text-align: center; }
+
+.fontpage-logo p {
+  padding: 0;
+  margin: 0; }
+
+.logo-text {
+  font-size: 3em; }
+
+.tag-line, .main-tag-line {
+  font-size: 1.3em;
+  text-align: center; }
+
+.main-tag-line {
+  font-style: italic;
+  color: #434343; }
+
+.logo-images {
+  text-align: center; }
+
+.logo-images img {
+  width: 6em;
+  padding: 0.5em; }
+
+.logo-by-height img {
+  height: 6em;
+  width: auto; }
+
+.logo-images a {
+  padding: 0;
+  display: inline; }
+
+.feature-list {
+  color: #545454;
+  text-align: center;
+  background-color: #cae5ff;
+  padding: 1em;
+  border-radius: 0.5em; }
+
+.feature-list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.6em; }

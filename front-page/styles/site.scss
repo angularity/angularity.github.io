@@ -1,0 +1,73 @@
+$logo-size: 6em;
+$frontpage-max-width: 44em;
+$main-bg-color: #ffffff;
+$tag-line-color: #434343;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $main-bg-color;
+}
+
+.frontpage-container {
+  max-width: $frontpage-max-width;
+  margin: 0 auto;
+}
+
+.fontpage-logo {
+  text-align: center;
+}
+.fontpage-logo p {
+  padding: 0;
+  margin: 0;
+}
+
+.logo-text {
+  font-size: 3em;
+}
+
+.tag-line {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.main-tag-line {
+  @extend .tag-line;
+  font-style: italic;
+  color: $tag-line-color;
+}
+
+.logo-images {
+  text-align: center;
+}
+
+.logo-images img {
+  width: $logo-size;
+  padding: 0.5em;
+}
+
+// the gulp logo has a different ratio for automatic sizing
+.logo-by-height img {
+  height: $logo-size;
+  width: auto;
+}
+
+.logo-images a {
+  padding: 0;
+  display: inline;
+}
+
+.feature-list {
+  color: #545454;
+  text-align: center;
+  background-color: #cae5ff;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.feature-list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.6em;
+}
