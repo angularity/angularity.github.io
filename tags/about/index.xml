@@ -59,7 +59,7 @@
     </item>
     
     <item>
-      <title>Angularity</title>
+      <title>Angularity (DEPRECATED)</title>
       <link>/about/mission/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
@@ -68,6 +68,16 @@
 
 &lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
 &lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ndash; IMPORTANT ANNOUNCEMENT &amp;ndash;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Angularity is now &lt;strong&gt;deprecated&lt;/strong&gt; and may be removed at any time.&lt;/p&gt;
+
+&lt;p&gt;Do &lt;strong&gt;not&lt;/strong&gt; use for new projects.&lt;/p&gt;
+
+&lt;p&gt;Use the &lt;a href=&#34;https://www.npmjs.com/package/webpack-angularity-solution&#34;&gt;Webpack implementation&lt;/a&gt; for existing Angularity (Browserify/SASS) projects using &lt;strong&gt;Angular 1.x&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;A philosophy of development&lt;/p&gt;
 
